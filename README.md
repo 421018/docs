@@ -3,7 +3,7 @@
 The texts of the documentation published at [42chain.org/docs](https://42chain.org/docs):
 how Infinite Drive works and how to connect, build, integrate systems and run a
 node. Plain Markdown, in English and Spanish, with no code: the site
-(`42chain-site`) turns it into pages, widgets and diagrams.
+(the `site` repository) turns it into pages, widgets and diagrams.
 
 ## Layout
 
@@ -19,12 +19,12 @@ Spanish one with a notice. Folder and file names are English: they are the
 public addresses (`pages/protocol/fees.md` → `/docs/protocol/fees`).
 
 What stays in the site, not here: the documentation's header, notice and
-search texts (`42chain-site`, `apps/web/content/docs-ui/`), and the network
-data used by the network widgets (`42chain-network`).
+search texts (the `site` repository, `apps/web/content/docs-ui/`), and the
+network data used by the network widgets (the `network` repository).
 
 ## Writing
 
-- Front matter and `:::` blocks follow the schemas in `42chain-site`
+- Front matter and `:::` blocks follow the schemas in the `site` repository
   (`apps/web/src/kit/schemas.ts`, `apps/web/src/content.config.ts`); a
   misspelled field or an unknown block stops the build and the check names it.
 - Widgets are inserted with `:::widget{name="…"}`; no HTML, MDX or scripts.
@@ -38,8 +38,8 @@ This repository has nothing to run on its own. Use the site, with this
 repository as its `apps/web/content/docs` submodule:
 
 ```bash
-git clone --recurse-submodules https://github.com/<org>/42chain-site.git
-cd 42chain-site && npm ci && npm run dev   # http://localhost:4321/docs
+git clone --recurse-submodules https://github.com/<org>/site.git
+cd site && npm ci && npm run dev   # http://localhost:4321/docs
 ```
 
 Edit the files under `apps/web/content/docs/` (they are this repository), then

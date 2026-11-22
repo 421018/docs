@@ -1,4 +1,4 @@
-# Builds the whole site (42chain-site) with this repository's changes in place,
+# Builds the whole site (the site repository) with this repository's changes in place,
 # then checks every internal link: a content error fails here, before merging.
 name: Check
 
@@ -22,7 +22,7 @@ jobs:
       - name: The site, with the other content repositories at their main
         uses: actions/checkout@v7.0.1
         with:
-          repository: ${{ github.repository_owner }}/42chain-site
+          repository: ${{ github.repository_owner }}/site
           path: site
           fetch-depth: 0
       - run: git submodule update --init --remote
