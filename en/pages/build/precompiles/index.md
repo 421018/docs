@@ -28,5 +28,5 @@ A contract calls them like any other contract, at a fixed address and with a Sol
 Native units also have their own ERC20 address, different for each unit.
 
 :::aside
-The full interface of each function is in the protocol's source code. [Public repository]
+The full interface of each function is in the protocol's [source code](https://github.com/deep-thought-labs/infinite-app).
 :::

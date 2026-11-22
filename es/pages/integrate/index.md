@@ -56,4 +56,4 @@ Una integración suele seguir cinco pasos:
 - **2. Probar en la red de pruebas.** La integración se prueba primero en la red de pruebas, con unidades de prueba.
 - **3. Resolver dudas.** Si algo no está claro, pregunta en el espacio de discusiones del repositorio público.
 - **4. Pasar a la red principal.** Con la integración probada, se conecta a la red principal. Solo cambian los parámetros de conexión.
-- **5. Seguir las actualizaciones.** Cuando se aprueba por gobernanza una versión nueva del protocolo, quienes operan nodos los actualizan antes de la altura de actualización. Las notas de cada versión se publican en [Cambios].
+- **5. Seguir las actualizaciones.** Cuando se aprueba por gobernanza una versión nueva del protocolo, quienes operan nodos los actualizan antes de la altura de actualización. Las notas de cada versión se publican en el [CHANGELOG](https://github.com/deep-thought-labs/infinite-app/blob/master/CHANGELOG.md) del protocolo.

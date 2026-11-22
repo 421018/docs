@@ -53,7 +53,7 @@ This documentation is built so that as little data as possible passes through it
 - **Local search.** The search index is downloaded from the site itself, and what you search for is not sent to any server.
 - **Network queries.** The fee calculator and the Console read public network data, such as the latest block or the gas price, straight from your browser from the public services (RPC) of the independent providers in the [directory](/get-started/connect#providers). Those providers receive your IP address, as with any connection, under their own policies. Nothing else is sent.
 - **No other third-party resources.** Fonts and other resources are served from the site itself. Apart from those queries, the browser connects to another site only when you follow an external link.
-- **Hosting.** Like any website, the hosting provider ([hosting provider]) processes technical data of each visit, such as the IP address, in order to deliver the pages and protect them from abuse, under its own privacy policy.
+- **Hosting.** Like any website, the hosting provider (Cloudflare) processes technical data of each visit, such as the IP address, in order to deliver the pages and protect them from abuse, under its own privacy policy.
 
 These terms also apply to the Console, which only keeps the selected network in your browser.
 

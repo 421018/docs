@@ -53,7 +53,7 @@ Esta documentación está hecha para que pase por ella la menor cantidad de dato
 - **Búsqueda local.** El índice de búsqueda se descarga del propio sitio y lo que buscas no se envía a ningún servidor.
 - **Consultas a la red.** La calculadora de tarifas y la Consola leen datos públicos de la red, como el último bloque o el precio del gas, directamente desde tu navegador a los servicios públicos (RPC) de los proveedores independientes del [directorio](/get-started/connect#providers). Esos proveedores reciben tu dirección IP, como en cualquier conexión, según sus propias políticas. No se envía nada más.
 - **Sin otros recursos de terceros.** Las fuentes y los demás recursos se sirven desde el propio sitio. Fuera de esas consultas, el navegador solo se conecta a otro sitio cuando sigues un enlace externo.
-- **Alojamiento.** Como cualquier sitio web, el proveedor de alojamiento ([proveedor de alojamiento]) procesa datos técnicos de cada visita, como la dirección IP, para entregar las páginas y protegerlas de abusos, según su propia política de privacidad.
+- **Alojamiento.** Como cualquier sitio web, el proveedor de alojamiento (Cloudflare) procesa datos técnicos de cada visita, como la dirección IP, para entregar las páginas y protegerlas de abusos, según su propia política de privacidad.
 
 Estas condiciones valen también para la Consola, que solo guarda en tu navegador la red seleccionada.
 

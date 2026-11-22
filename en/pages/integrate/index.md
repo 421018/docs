@@ -56,4 +56,4 @@ An integration usually follows five steps:
 - **2. Test on the testnet.** The integration is tested on the testnet first, with test units.
 - **3. Resolve questions.** If something is not clear, ask in the public repository's discussion space.
 - **4. Move to the mainnet.** With the integration tested, it connects to the mainnet. Only the connection parameters change.
-- **5. Follow the upgrades.** When a new version of the protocol is approved by governance, those who run nodes update them before the upgrade height. The notes for each version are published in [Changes].
+- **5. Follow the upgrades.** When a new version of the protocol is approved by governance, those who run nodes update them before the upgrade height. The notes for each version are published in the protocol's [CHANGELOG](https://github.com/deep-thought-labs/infinite-app/blob/master/CHANGELOG.md).

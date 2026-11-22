@@ -14,8 +14,8 @@ Algunas fuentes las mantienen los contribuidores del protocolo; otras, como los 
 
 | Qué se comprueba | Dónde |
 |---|---|
-| El código del protocolo | [Repositorio público] |
-| Qué cambió en cada versión | [Notas de versión](/) |
+| El código del protocolo | [deep-thought-labs/infinite-app](https://github.com/deep-thought-labs/infinite-app) |
+| Qué cambió en cada versión | [CHANGELOG](https://github.com/deep-thought-labs/infinite-app/blob/master/CHANGELOG.md) |
 | La licencia del código | [Licencia](/legal#licenses) |
 
 ## La red {#network}

@@ -28,5 +28,5 @@ Un contrato las llama como a cualquier otro contrato, en una dirección fija y c
 Las unidades nativas también tienen una dirección ERC20 propia, distinta para cada unidad.
 
 :::aside
-Las interfaces completas de cada función están en el código fuente del protocolo. [Repositorio público]
+Las interfaces completas de cada función están en el [código fuente del protocolo](https://github.com/deep-thought-labs/infinite-app).
 :::
