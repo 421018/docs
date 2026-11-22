@@ -1,0 +1,24 @@
+# On every push to main, asks Cloudflare Pages to rebuild 42chain.org: the site's
+# build takes the main branch of every content repository.
+# Needs the secret CF_DEPLOY_HOOK (Settings → Secrets and variables → Actions):
+# the deploy hook URL of the site's Pages project. Without it, this step is skipped.
+name: Publish
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  rebuild-site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Trigger the site's deploy hook
+        env:
+          HOOK: ${{ secrets.CF_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then echo "CF_DEPLOY_HOOK is not set: nothing to trigger."; exit 0; fi
+          curl -fsS -X POST "$HOOK" > /dev/null && echo "Rebuild requested."

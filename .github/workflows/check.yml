@@ -1,0 +1,44 @@
+# Builds the whole site (42chain-site) with this repository's changes in place,
+# then checks every internal link: a content error fails here, before merging.
+name: Check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: The site, with the other content repositories at their main
+        uses: actions/checkout@v7.0.1
+        with:
+          repository: ${{ github.repository_owner }}/42chain-site
+          path: site
+          fetch-depth: 0
+      - run: git submodule update --init --remote
+        working-directory: site
+      - name: This repository's change, in place of its submodule
+        run: rm -rf site/apps/web/content/docs
+      - uses: actions/checkout@v7.0.1
+        with:
+          path: site/apps/web/content/docs
+          fetch-depth: 0 # full history: "last reviewed" dates come from each file's last commit
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version-file: site/.nvmrc
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci
+        working-directory: site
+      - run: npm run verify
+        working-directory: site
