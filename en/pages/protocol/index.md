@@ -12,7 +12,7 @@ section:
 
 ## How it works {#how}
 
-Protocol 42 is the set of rules with which many computers keep the same ledger. These pages explain that set, from the signing of an operation to the change of a rule.
+Infinite Drive, the protocol of 42 Chain, is the set of rules with which many computers keep the same ledger. These pages explain that set, from the signing of an operation to the change of a rule.
 
 - **[Consensus and staking](/protocol/consensus).** How each block is agreed, and what happens when a validator fails or tries to cheat.
 - **[Execution](/protocol/execution).** What happens from the signature to the change in the ledger, and how contracts run.

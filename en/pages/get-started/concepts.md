@@ -13,7 +13,7 @@ An account is controlled with a private key and identified by an address. On 42,
 | Hexadecimal (EVM) | `0x…` | EVM-compatible wallets and tools |
 | Bech32 (native) | `infinite1…` | Native wallets, Cosmos ecosystem tools and IBC |
 
-The two formats correspond to the same account and the same balance. The prefix `infinite` is the network's technical identifier, from the protocol's formal name.
+The two formats correspond to the same account and the same balance. The prefix `infinite` is the network's technical identifier, from Infinite Drive, the protocol it runs on.
 
 ## Units: drops and cups {#units}
 

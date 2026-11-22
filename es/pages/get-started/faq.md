@@ -4,11 +4,11 @@ summary: "Preguntas técnicas sobre el protocolo, la construcción de aplicacion
 weight: 40
 ---
 
-## El protocolo {#protocol}
-
-:::faq[¿Qué es el Protocolo 42?]
-Su nombre formal es *Infinite Improbability Drive*. Define las reglas que siguen todos los nodos para llevar un registro compartido, aplicar las mismas reglas y decidir cambios a la vista. [Protocolo](/protocol)
+:::aside
+Qué es 42 Chain, cómo se relaciona con Infinite Drive, quién lo desarrolla, tus llaves y este sitio: [preguntas generales →](site:/faq)
 :::
+
+## El protocolo {#protocol}
 
 :::faq[¿Puedo mantener datos reservados?]
 Sí. Los datos reservados se quedan fuera de la cadena, y en la red se registra solo su huella. [Qué va dentro y fuera de la cadena](/build/applications#application)
@@ -18,8 +18,8 @@ Sí. Los datos reservados se quedan fuera de la cadena, y en la red se registra 
 Dos nombres de medida de Improbability. Un **drop** es la fracción más pequeña y la denominación base de la red (`drop`, y `tdrop` en la red de pruebas): la unidad tiene 18 decimales, así que una unidad completa son 10¹⁸ drops. **Cup** es el nombre coloquial de una unidad completa, que se usa para hablar de cantidades sin repetir «Improbability». En billeteras y exploradores, la unidad aparece siempre con su símbolo, 42. [Drops y cups](/protocol/fees#drops-and-cups)
 :::
 
-:::faq[¿Cuánto tarda en confirmarse una transacción?]
-Segundos. Una vez confirmada, la transacción es definitiva: no puede revertirse.
+:::faq[¿Cuánto tarda una transacción en ser definitiva?]
+Un bloque, unos segundos. CometBFT confirma cada bloque de forma definitiva, sin reorganizaciones: una vez confirmada, una transacción no puede revertirse. El tiempo por bloque se ve en vivo en la [Consola](console:/status).
 :::
 
 :::faq[¿Con qué otras redes se conecta?]
@@ -29,7 +29,7 @@ Con las redes compatibles con IBC con las que se establece una conexión. Cada r
 ## Construir {#build}
 
 :::faq[¿Qué herramientas de desarrollo puedo usar?]
-Las del ecosistema EVM: Solidity, Hardhat, Foundry, Remix, Ethers.js, Viem y billeteras como MetaMask.
+Las del ecosistema EVM: Solidity, Hardhat, Foundry, Remix, Ethers.js, Viem y billeteras como MetaMask. Solo necesitas el chain ID y una dirección RPC. [Conectarse](/get-started/connect)
 :::
 
 :::faq[¿Puedo publicar un contrato que ya escribí para la EVM?]
@@ -60,12 +60,8 @@ Una cuenta elige un validador y le delega unidades. Esas unidades aumentan el po
 
 ## Gobernanza {#governance}
 
-:::faq[¿Cómo se toman las decisiones?]
-Cualquiera puede presentar una propuesta, dejando un depósito. Los validadores y las personas que les delegan unidades la votan durante un período fijo. Si la propuesta se aprueba, la red aplica el cambio. [Gobernanza](/protocol/governance)
-:::
-
-:::faq[¿Quién decide los cambios al protocolo?]
-Los votos registrados en la cadena. Cualquiera puede proponer cambios, también quienes desarrollan el software, y un cambio se aplica solo si lo aprueban los validadores y quienes les delegan unidades.
+:::faq[¿Cómo se deciden los cambios al protocolo?]
+Por los votos registrados en la cadena. Cualquiera puede presentar una propuesta dejando un depósito, también quienes desarrollan el software. Los validadores y las personas que les delegan unidades la votan durante un período fijo, y la red aplica el cambio solo si lo aprueban. [Gobernanza](/protocol/governance)
 :::
 
 ## Seguridad {#security}

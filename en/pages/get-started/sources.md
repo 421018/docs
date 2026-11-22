@@ -16,7 +16,7 @@ Some sources are maintained by the protocol's contributors; others, such as the 
 |---|---|
 | The protocol's code | [deep-thought-labs/infinite-app](https://github.com/deep-thought-labs/infinite-app) |
 | What changed in each version | [CHANGELOG](https://github.com/deep-thought-labs/infinite-app/blob/master/CHANGELOG.md) |
-| The code's license | [License](/legal#licenses) |
+| The code's license | [License](site:/legal#licenses) |
 
 ## The network {#network}
 

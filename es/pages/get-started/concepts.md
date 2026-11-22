@@ -13,7 +13,7 @@ Una cuenta se controla con una llave privada y se identifica con una dirección.
 | Hexadecimal (EVM) | `0x…` | Billeteras y herramientas compatibles con la EVM |
 | Bech32 (nativo) | `infinite1…` | Billeteras nativas, herramientas del ecosistema Cosmos e IBC |
 
-Los dos formatos corresponden a la misma cuenta y al mismo saldo. El prefijo `infinite` es el identificador técnico de la red, por el nombre formal del protocolo.
+Los dos formatos corresponden a la misma cuenta y al mismo saldo. El prefijo `infinite` es el identificador técnico de la red, por Infinite Drive, el protocolo que ejecuta.
 
 ## Unidades: drops y cups {#units}
 

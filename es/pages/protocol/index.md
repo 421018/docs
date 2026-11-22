@@ -12,7 +12,7 @@ section:
 
 ## Cómo funciona {#how}
 
-El Protocolo 42 es el conjunto de reglas con el que muchas computadoras llevan un mismo registro. Estas páginas explican ese conjunto, de la firma de una operación al cambio de una regla.
+Infinite Drive, el protocolo de 42 Chain, es el conjunto de reglas con el que muchas computadoras llevan un mismo registro. Estas páginas explican ese conjunto, de la firma de una operación al cambio de una regla.
 
 - **[Consenso y staking](/protocol/consensus).** Cómo se acuerda cada bloque, y qué pasa cuando un validador falla o intenta hacer trampa.
 - **[Ejecución](/protocol/execution).** Qué ocurre desde la firma hasta el cambio en el registro, y cómo corren los contratos.

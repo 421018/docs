@@ -4,11 +4,11 @@ summary: "Technical questions about the protocol, building applications, nodes, 
 weight: 40
 ---
 
-## The protocol {#protocol}
-
-:::faq[What is Protocol 42?]
-Its formal name is *Infinite Improbability Drive*. It defines the rules every node follows to keep a shared ledger, apply the same rules and decide changes in the open. [Protocol](/protocol)
+:::aside
+What 42 Chain is, how it relates to Infinite Drive, who develops it, your keys and this site: [general questions →](site:/faq)
 :::
+
+## The protocol {#protocol}
 
 :::faq[Can I keep data private?]
 Yes. Private data stays off the chain, and only its fingerprint is recorded on the network. [What goes on and off the chain](/build/applications#application)
@@ -18,8 +18,8 @@ Yes. Private data stays off the chain, and only its fingerprint is recorded on t
 Two measures of Improbability. A **drop** is the smallest fraction and the network's base denomination (`drop`, and `tdrop` on the testnet): the unit has 18 decimals, so one whole unit is 10¹⁸ drops. **Cup** is the colloquial name of a whole unit, used to talk about amounts without repeating "Improbability". In wallets and explorers, the unit always appears with its symbol, 42. [Drops and cups](/protocol/fees#drops-and-cups)
 :::
 
-:::faq[How long does a transaction take to confirm?]
-Seconds. Once confirmed, the transaction is final: it cannot be reversed.
+:::faq[How long until a transaction is final?]
+One block, a few seconds. CometBFT confirms every block for good, with no reorganisations: once confirmed, a transaction cannot be reversed. The time per block is shown live in the [Console](console:/status).
 :::
 
 :::faq[Which other networks does it connect to?]
@@ -29,7 +29,7 @@ The IBC-compatible networks a connection is established with. Each network check
 ## Building {#build}
 
 :::faq[Which development tools can I use?]
-Those of the EVM ecosystem: Solidity, Hardhat, Foundry, Remix, Ethers.js, Viem and wallets such as MetaMask.
+Those of the EVM ecosystem: Solidity, Hardhat, Foundry, Remix, Ethers.js, Viem and wallets such as MetaMask. All you need is the chain ID and an RPC address. [Connect](/get-started/connect)
 :::
 
 :::faq[Can I publish a contract I already wrote for the EVM?]
@@ -60,12 +60,8 @@ An account chooses a validator and delegates units to them. Those units increase
 
 ## Governance {#governance}
 
-:::faq[How are decisions made?]
-Anyone can submit a proposal, by leaving a deposit. Validators and the people who delegate units to them vote on it for a fixed period. If the proposal is approved, the network applies the change. [Governance](/protocol/governance)
-:::
-
-:::faq[Who decides changes to the protocol?]
-The votes recorded on the chain. Anyone can propose changes, including those who develop the software, and a change is applied only if the validators and those who delegate units to them approve it.
+:::faq[How are changes to the protocol decided?]
+By the votes recorded on the chain. Anyone can submit a proposal by leaving a deposit, including those who develop the software. Validators and the people who delegate units to them vote on it for a fixed period, and the network applies the change only if they approve it. [Governance](/protocol/governance)
 :::
 
 ## Security {#security}
