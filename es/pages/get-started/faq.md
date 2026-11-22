@@ -76,6 +76,6 @@ En privado, a los mantenedores del código, nunca en un espacio público. [Repor
 
 ## Proveedores {#providers}
 
-:::faq[¿Los servicios de terceros que aparecen en la documentación están respaldados por el proyecto?]
-No. Los proveedores de RPC y de exploradores que se listan en la documentación son independientes, y cada uno responde por su servicio. Que aparezcan en el sitio no implica respaldo.
+:::faq[¿Alguno de los servicios listados es oficial?]
+No. Ningún servicio alrededor del proyecto es oficial. Los puntos de acceso RPC, exploradores y faucets del directorio son iniciativas voluntarias y comunitarias, cada una operada por quien la ofrece, que responde por ella. Figuran solo a título informativo, en un repositorio abierto en el que cualquiera puede proponer agregar, modificar o quitar una entrada. [Servicios de terceros](site:/legal#third-parties)
 :::

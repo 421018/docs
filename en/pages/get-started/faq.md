@@ -76,6 +76,6 @@ In private, to the maintainers of the code, never in a public space. [Report a v
 
 ## Providers {#providers}
 
-:::faq[Are the third-party services listed in the documentation endorsed by the project?]
-No. The RPC and explorer providers listed in the documentation are independent, and each is responsible for its service. Their appearance on the site does not imply endorsement.
+:::faq[Is any of the listed services official?]
+No. No service around the project is official. The RPC access points, explorers and faucets in the directory are voluntary, community initiatives, each run and answered for by whoever offers it. They are listed for information only, in an open repository where anyone can propose to add, change or remove an entry. [Third-party services](site:/legal#third-parties)
 :::
